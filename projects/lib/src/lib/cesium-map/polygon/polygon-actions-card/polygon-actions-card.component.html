@@ -1,0 +1,13 @@
+<div class="d-flex flex-column text-center text-white">
+    <span *ngIf="polygon.mode==='create'">Tracez un polygone et terminez avec <strong class="text-secondary">clic
+            droit</strong></span>
+    <ng-container *ngIf="polygon.mode === 'edit'">
+        <div class="d-flex flex-column">
+            <span class="mb-3">Modifier le polygone en déplaçant ses points</span>
+            <div class="d-flex flex-row justify-content-center">
+                <button mat-stroked-button class="me-3" (click)="cancel()">Annuler</button>
+                <button mat-flat-button color="primary" [disabled]="!canValid" (click)="validate()">Valider</button>
+            </div>
+        </div>
+    </ng-container>
+</div>

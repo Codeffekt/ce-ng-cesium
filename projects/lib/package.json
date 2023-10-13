@@ -1,0 +1,36 @@
+{
+  "name": "@codeffekt/ce-ng-cesium",
+  "version": "13.9.0",
+  "description": "Angular Wrapper for Cesium",
+  "author": {
+    "name": "Codeffekt",
+    "email": "contact@codeffekt.com",
+    "url": "https://codeffekt.com"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "@angular/common": "^13.3.1",
+    "@angular/core": "^13.3.1",
+    "@angular/material": "^13.3.2",
+    "@angular/cdk": "^13.3.2",    
+    "@ngneat/until-destroy": "^8.1.4",
+    "@codeffekt/ce-core": "^13.9.0",
+    "@codeffekt/ce-core-data": "^1.1.0",
+    "material-design-icons-iconfont": "^6.1.0",
+    "cesium": "1.92.0",
+    "uuid": "^8.3.2"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "module": "./dist/lib/fesm2015/codeffekt-ce-ng-cesium.mjs",
+  "es2020": "./dist/lib/fesm2020/codeffekt-ce-ng-cesium.mjs",
+  "esm2020": "./dist/lib/esm2020/codeffekt-ce-ng-cesium.mjs",
+  "fesm2020": "./dist/lib/fesm2020/codeffekt-ce-ng-cesium.mjs",
+  "fesm2015": "./dist/lib/fesm2015/codeffekt-ce-ng-cesium.mjs",
+  "typings": "./dist/lib/codeffekt-ce-ng-cesium.d.ts"
+}

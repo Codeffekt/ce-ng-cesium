@@ -1,0 +1,12 @@
+<div *ngIf="items">
+    <!-- <mat-paginator [pageSize]="10" [length]="datasource.length" [hidePageSize]="true" (page)="pageChanges($event)"
+    showFirstLastButtons></mat-paginator> -->
+
+    <div class="pt-4 d-flex flex-column">
+        <div *ngFor="let item of items" class="hoverable" (click)="selectItem(item)"
+            (mouseenter)="onHoverSelectItem(item)" (mouseleave)="onHoverClearItem()">
+            <ng-container [ngTemplateOutlet]='template' [ngTemplateOutletContext]='{ $implicit: item }'>
+            </ng-container>
+        </div>
+    </div>
+</div>

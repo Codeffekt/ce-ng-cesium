@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+// @import "../../lib/assets/styles.scss";
+
+/* You can add global styles to this file, and also import other style files */
+
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+@import "theme_override";
+
+@import "~bootstrap/scss/bootstrap"; 
+@import '~@codeffekt/ce-core/core';
+
+@import "../../lib/assets/styles.scss";
+

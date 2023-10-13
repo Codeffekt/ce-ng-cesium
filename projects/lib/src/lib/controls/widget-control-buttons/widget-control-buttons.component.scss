@@ -1,0 +1,90 @@
+@import "node_modules/@codeffekt/ce-core/styles/theme_functions";
+@import "node_modules/@codeffekt/ce-core/styles/components/backgrounds";
+
+:host {
+    .viewer-control-buttons {
+        .label {
+            color: white;
+        }
+
+        .button-items {
+            @include dark-rounded-background();
+        }
+    }
+
+    .viewer-control-buttons-item {
+        min-width: 40px;
+        height: 40px;
+
+        font-size: 24px;
+
+        .mat-icon {
+            color: white;
+        }
+
+        span {
+            color: white;
+        }
+
+        &.active .mat-icon {
+            color: secondaryColor();
+        }
+
+        &.active span {
+            color: secondaryColor();
+        }
+    }
+
+    .viewer-button-popup-content {
+        min-width:220px;
+        position: absolute;
+        margin-top: 14px;
+        padding: 12px;
+        @include dark-background();
+        border-radius: 4px;
+        &.center {
+            left:50%;
+            transform:translateX(-50%);
+        }
+        &.center:before {
+            left: 50%;
+            transform:translateX(-50%);
+        }
+        &.left {
+            left: 0;
+        }
+        &.left:before {
+            left: 12px;
+        }
+        &.right {
+            right: 0;
+        }
+        &.right:before {
+            right: 12px;
+        }
+        &:before {
+            content: "";
+            $triangle-size: 10px;
+            position: absolute;
+            top: -10px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 $triangle-size $triangle-size $triangle-size;
+            border-color: transparent transparent #151411 transparent;
+        }
+
+        ::ng-deep {
+            .mat-slider-horizontal .mat-slider-track-background {
+                background: lightgray;
+            }
+            .mat-slider-ticks-container {
+                display: none;
+            }
+
+            .mat-slide-toggle-bar {
+                background: #646363;
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+<cesium-map [mapId]="mapId" [config]="mapConfig"></cesium-map>
+
+<viewer-buttons>
+    <viewer-button-popup toolTip="Paramètres" icon="settings" popupAlignment="center">
+        <settings-section title="Autoroute">
+            <settings-entry>
+                <settings-entry-label>Tracé théorique</settings-entry-label>
+                <mat-slide-toggle></mat-slide-toggle>
+            </settings-entry>
+            <settings-entry>
+                <settings-entry-label>Dernière position
+                </settings-entry-label>
+                <mat-slide-toggle></mat-slide-toggle>
+            </settings-entry>
+        </settings-section>
+
+    </viewer-button-popup>
+</viewer-buttons>
+
+<map-panel [panelExpanded]="true">
+    <map-panel-header>
+        <h2>Title panel</h2>
+    </map-panel-header>
+    <map-panel-actions>
+        <button mat-icon-button class="light" (click)="back()">
+            <mat-icon>keyboard_arrow_left</mat-icon>
+        </button>
+    </map-panel-actions>
+    <map-panel-body>
+        <map-panel-list [items]='items' (onHoverSelectEvent)="onHoverSelect($event)" (onSelectEvent)="onSelect($event)">
+            <ng-template let-item>
+                {{item.title}}
+            </ng-template>
+        </map-panel-list>
+    </map-panel-body>
+</map-panel>

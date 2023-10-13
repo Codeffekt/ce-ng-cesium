@@ -1,0 +1,13 @@
+:host {
+    .drawing-actions {
+        display: grid;
+        grid-template-columns: auto;
+        position: absolute;
+        grid-gap: 12px;
+        margin: 12px;
+
+        .mat-form-field {            
+            background: #af4242d8;            
+        }
+    }
+}

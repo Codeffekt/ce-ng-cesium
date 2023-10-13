@@ -1,0 +1,12 @@
+<cesium-map [mapId]="mapId" [config]="mapConfig"></cesium-map>
+
+<div class="drawing-actions">    
+    <mat-form-field appearance="fill">
+        <mat-label>Mode</mat-label>
+        <mat-select [(ngModel)]="currentMode" (selectionChange)="onModeChanged()">
+          <mat-option *ngFor="let mode of modes" [value]="mode">
+            {{mode}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+</div>

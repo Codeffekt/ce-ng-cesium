@@ -1,0 +1,14 @@
+<cesium-map [mapId]="mapId" [config]="mapConfig"></cesium-map>
+
+<cesium-button icon="add" (click)="createPolygon()"></cesium-button>
+
+<div class="demo-drawing-validation" *ngIf="mode ==='create'">
+    <span>Ajoutez les points du polygone et terminer avec clic droit</span>
+</div>
+
+<div class="demo-drawing-validation" *ngIf="mode ==='edit'">
+    <span>Modifier les points du polygone ou valider</span>
+    <div>
+        <button mat-flat-button color="accent" [disabled]="!isValid" (click)="terminate()">Valider</button>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="map-panel">
+    <div class="map-panel-content" [class.expanded]="panelExpanded" style.width="{{width}}px">
+        <div class="map-panel-toggle-button" (click)="togglePanel()">
+            <mat-icon class="h4">play_arrow</mat-icon>
+        </div>
+        <div class="map-panel-container">
+            <ng-content select="map-panel-header"></ng-content>
+            <ng-content select="map-panel-actions"></ng-content>
+            <ng-content select="map-panel-body"></ng-content>
+        </div>
+    </div>
+</div>

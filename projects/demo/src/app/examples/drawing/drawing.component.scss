@@ -1,0 +1,36 @@
+:host {
+    .drawing-actions {
+        display: grid;
+        grid-template-columns: auto;
+        position: absolute;
+        grid-gap: 12px;
+        margin: 12px;
+
+        .mat-icon-button {
+            &.active {
+                background: #3de15ec3;
+            }
+            background: #00000092;
+            color: white;
+            border-radius: 4px;
+        }
+    }
+
+    .demo-drawing-validation {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        background: black;
+        padding: 12px;
+        color: white;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap:12px;
+            margin-top:12px;
+        }
+    }
+}

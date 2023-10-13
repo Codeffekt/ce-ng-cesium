@@ -1,0 +1,7 @@
+<cesium-button (click)="togglePolygonMode()" [active]="polygon?.mode === 'create' || polygon?.mode === 'edit'"
+    icon="add">
+    <mat-icon>add</mat-icon>
+</cesium-button>
+<span class="text-white">Edition {{manager.drawingManager.polygon?.mode}}</span>
+<ce-polygon-actions-card *ngIf="polygon?.mode === 'create' || polygon?.mode === 'edit'" [polygon]="polygon">
+</ce-polygon-actions-card> 

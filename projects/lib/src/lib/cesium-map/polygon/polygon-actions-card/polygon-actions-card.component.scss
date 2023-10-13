@@ -1,0 +1,12 @@
+:host {
+    padding: 18px 24px;
+    background: #000000b0;
+    display: block;
+    border-radius: 8px;
+
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
