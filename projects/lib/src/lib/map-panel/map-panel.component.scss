@@ -1,4 +1,5 @@
-@import "node_modules/@codeffekt/ce-core/styles/theme_functions";
+//@import "node_modules/@codeffekt/ce-core/styles/theme_functions";
+@import "@codeffekt/ce-core/core";
 
 .map-panel {
     display: flex;    
@@ -50,7 +51,7 @@
     user-select: none;
     transform: translateX(-100%);
     &:hover {
-        background: lighten(primaryColor(800), 2);
+        // background: lighten(primaryColor(800), 2);
         cursor: pointer;
     }
     mat-icon {

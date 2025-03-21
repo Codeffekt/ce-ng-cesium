@@ -1,8 +1,9 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 @Component({
-  selector: 'cesium-button',
-  templateUrl: `./cesium-button.component.html`,
-  styleUrls: ['./cesium-button.component.scss']
+    selector: 'cesium-button',
+    templateUrl: `./cesium-button.component.html`,
+    styleUrls: ['./cesium-button.component.scss'],
+    standalone: false
 })
 export class CesiumButtonComponent implements OnInit {
 

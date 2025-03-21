@@ -5,10 +5,11 @@ import { CesiumDrawingShapeEventType } from 'projects/lib/src/lib/managers/cesiu
 import { filter } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-drawing',
-  templateUrl: './drawing.component.html',
-  styleUrls: ['./drawing.component.scss'],
-  providers: [PolygonEditorService],
+    selector: 'app-drawing',
+    templateUrl: './drawing.component.html',
+    styleUrls: ['./drawing.component.scss'],
+    providers: [PolygonEditorService],
+    standalone: false
 })
 export class DrawingExampleComponent implements OnInit, AfterViewInit {
 

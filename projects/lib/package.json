@@ -1,6 +1,6 @@
 {
   "name": "@codeffekt/ce-ng-cesium",
-  "version": "13.9.0",
+  "version": "19.0.0",
   "description": "Angular Wrapper for Cesium",
   "author": {
     "name": "Codeffekt",
@@ -13,14 +13,14 @@
   },
   "license": "Apache-2.0",
   "peerDependencies": {
-    "@angular/common": "^13.3.1",
-    "@angular/core": "^13.3.1",
-    "@angular/material": "^13.3.2",
-    "@angular/cdk": "^13.3.2",    
+    "@angular/common": "^19.2.3",
+    "@angular/core": "^19.2.3",
+    "@angular/material": "^19.2.6",
+    "@angular/cdk": "^19.2.6",
     "@ngneat/until-destroy": "^8.1.4",
-    "@codeffekt/ce-core": "^13.9.0",
-    "@codeffekt/ce-core-data": "^1.1.0",
-    "material-design-icons-iconfont": "^6.1.0",
+    "@codeffekt/ce-core": "^19.0.1",
+    "@codeffekt/ce-core-data": "^1.2.3",
+    "material-design-icons-iconfont": "^6.7.0",
     "cesium": "1.92.0",
     "uuid": "^8.3.2"
   },

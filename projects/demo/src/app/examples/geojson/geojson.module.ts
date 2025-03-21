@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { CesiumModule } from '@codeffekt/ce-ng-cesium';
 import { GeojsonRoutingModule } from './geojson-routing.module';
 import { GeojsonComponent } from './geojson.component';
+import { FormsModule } from '@angular/forms';
+import { environment } from '../../../environments/environment';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
-import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { environment } from '../../../environments/environment';
 
 
 @NgModule({

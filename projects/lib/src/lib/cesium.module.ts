@@ -13,14 +13,14 @@ import {
     WidgetControlButtonsComponent,
     WidgetControlButtonComponent
 } from './controls/widget-control-buttons/widget-control-buttons.component';
-import { MatButtonModule } from '@angular/material/button';
 import { SettingsSectionComponent } from './controls/settings/settings-section/settings-section.component';
 import { SettingsEntryLabelComponent } from './controls/settings/settings-entry-label/settings-entry-label.component';
 import { SettingsEntryComponent } from './controls/settings/settings-entry/settings-entry.component';
-import { MatTooltipModule } from '@angular/material/tooltip';
 import { CesiumButtonComponent } from './controls/button/cesium-button.component';
 import { CesiumDrawingControlsComponent } from './cesium-map/cesium-drawing-controls/cesium-drawing-controls.component';
 import { CesiumPolygonActionsCardComponent } from './cesium-map/polygon/polygon-actions-card/polygon-actions-card.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
     declarations: [

@@ -33,9 +33,10 @@ const CESIUM_MAP_CONFIG: any = {
 };
 
 @Component({
-  selector: 'app-geojson',
-  templateUrl: './geojson.component.html',
-  styleUrls: ['./geojson.component.scss']
+    selector: 'app-geojson',
+    templateUrl: './geojson.component.html',
+    styleUrls: ['./geojson.component.scss'],
+    standalone: false
 })
 export class GeojsonComponent implements OnInit, AfterViewInit {
 

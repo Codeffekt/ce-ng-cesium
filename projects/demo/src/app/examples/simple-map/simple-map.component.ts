@@ -4,9 +4,10 @@ import { CesiumImageryService, CesiumMapConfig, CesiumService } from '@codeffekt
 
 
 @Component({
-  selector: 'app-simple-map',
-  templateUrl: './simple-map.component.html',
-  styleUrls: ['./simple-map.component.scss']
+    selector: 'app-simple-map',
+    templateUrl: './simple-map.component.html',
+    styleUrls: ['./simple-map.component.scss'],
+    standalone: false
 })
 export class SimpleMapExampleConponent implements OnInit, AfterViewInit {
 

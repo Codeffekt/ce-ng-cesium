@@ -4,9 +4,10 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'map-panel-list',
-  templateUrl: './map-panel-list.component.html',
-  styleUrls: ['./map-panel-list.component.scss']
+    selector: 'map-panel-list',
+    templateUrl: './map-panel-list.component.html',
+    styleUrls: ['./map-panel-list.component.scss'],
+    standalone: false
 })
 export class MapPanelListComponent implements OnInit {
 

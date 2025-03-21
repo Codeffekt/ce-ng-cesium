@@ -5,9 +5,10 @@ import { MapLayoutService } from "../map-layout.service";
 
 @UntilDestroy()
 @Component({
-  selector: 'map-panel',
-  templateUrl: './map-panel.component.html',
-  styleUrls: ['./map-panel.component.scss']
+    selector: 'map-panel',
+    templateUrl: './map-panel.component.html',
+    styleUrls: ['./map-panel.component.scss'],
+    standalone: false
 })
 export class MapPanelComponent implements OnInit {
 

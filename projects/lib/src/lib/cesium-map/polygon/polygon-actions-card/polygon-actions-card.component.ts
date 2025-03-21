@@ -6,9 +6,10 @@ import { CesiumManager } from '../../../managers/cesium-manager';
 import { Polygon } from '../polygon';
 @UntilDestroy()
 @Component({
-  selector: 'ce-polygon-actions-card',
-  templateUrl: './polygon-actions-card.component.html',
-  styleUrls: ['./polygon-actions-card.component.scss']
+    selector: 'ce-polygon-actions-card',
+    templateUrl: './polygon-actions-card.component.html',
+    styleUrls: ['./polygon-actions-card.component.scss'],
+    standalone: false
 })
 export class CesiumPolygonActionsCardComponent implements OnInit {
 

@@ -5,9 +5,10 @@ import { CesiumManager } from '../../managers/cesium-manager';
 import { Polygon } from '../polygon/polygon';
 
 @Component({
-  selector: 'cesium-drawing-controls',
-  templateUrl: './cesium-drawing-controls.component.html',
-  styleUrls: ['./cesium-drawing-controls.component.scss']
+    selector: 'cesium-drawing-controls',
+    templateUrl: './cesium-drawing-controls.component.html',
+    styleUrls: ['./cesium-drawing-controls.component.scss'],
+    standalone: false
 })
 export class CesiumDrawingControlsComponent implements OnInit {
 

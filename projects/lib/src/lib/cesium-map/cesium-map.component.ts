@@ -11,14 +11,15 @@ const DEFAULT_CONFIG: CesiumMapConfig = {
   showDrawingControls: true
 }
 @Component({
-  selector: 'cesium-map',
-  templateUrl: './cesium-map.component.html',
-  styleUrls: ['./cesium-map.component.scss'],
-  providers: [
-    PolygonEditorService,
-    CesiumManager,
-    CesiumDrawingManager
-  ]
+    selector: 'cesium-map',
+    templateUrl: './cesium-map.component.html',
+    styleUrls: ['./cesium-map.component.scss'],
+    providers: [
+        PolygonEditorService,
+        CesiumManager,
+        CesiumDrawingManager
+    ],
+    standalone: false
 })
 export class CesiumMapComponent implements OnInit, AfterViewInit, OnDestroy {
 

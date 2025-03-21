@@ -1,9 +1,10 @@
 import { Component, HostBinding, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'settings-entry',
-  templateUrl: './settings-entry.component.html',
-  styleUrls: ['./settings-entry.component.scss']
+    selector: 'settings-entry',
+    templateUrl: './settings-entry.component.html',
+    styleUrls: ['./settings-entry.component.scss'],
+    standalone: false
 })
 export class SettingsEntryComponent implements OnInit {
 

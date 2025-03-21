@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'map-panel-actions',
-  templateUrl: './map-panel-actions.component.html',
-  styleUrls: ['./map-panel-actions.component.scss']
+    selector: 'map-panel-actions',
+    templateUrl: './map-panel-actions.component.html',
+    styleUrls: ['./map-panel-actions.component.scss'],
+    standalone: false
 })
 export class MapPanelActionsComponent implements OnInit {
 

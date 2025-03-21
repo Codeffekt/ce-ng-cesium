@@ -1,8 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'viewer-button',
-  template: `
+    selector: 'viewer-button',
+    template: `
   <button class="viewer-control-buttons-item"
           mat-button 
           (click)="click()"
@@ -11,7 +11,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
     <mat-icon *ngIf="icon">{{icon}}</mat-icon>
     <span *ngIf="label">{{label}}</span>
   </button>`,
-  styleUrls: ['./widget-control-buttons.component.scss']
+    styleUrls: ['./widget-control-buttons.component.scss'],
+    standalone: false
 })
 export class WidgetControlButtonsItemComponent implements OnInit {
 
@@ -31,8 +32,8 @@ export class WidgetControlButtonsItemComponent implements OnInit {
 }
 
 @Component({
-  selector: 'viewer-buttons',
-  template: `
+    selector: 'viewer-buttons',
+    template: `
   <div class="viewer-control-buttons" fxLayout="column" fxLayoutAlign="center center">
     <div class="label mat-caption">{{label}}</div>
     <div class="button-items">
@@ -41,7 +42,8 @@ export class WidgetControlButtonsItemComponent implements OnInit {
       <ng-content></ng-content>
     </div>
   </div>`,
-  styleUrls: ['./widget-control-buttons.component.scss']
+    styleUrls: ['./widget-control-buttons.component.scss'],
+    standalone: false
 })
 export class WidgetControlButtonsComponent implements OnInit {
 
@@ -52,8 +54,8 @@ export class WidgetControlButtonsComponent implements OnInit {
 }
 
 @Component({
-  selector: 'viewer-button-popup',
-  template: `
+    selector: 'viewer-button-popup',
+    template: `
   <div class="position-relative">
     <viewer-button [toolTip]="toolTip" [label]="label" [toggled]="toggled" [icon]="icon" (click)="togglePopup()"></viewer-button>
     <div class="viewer-button-popup-content {{popupAlignment}}" *ngIf="popupShown">
@@ -61,7 +63,8 @@ export class WidgetControlButtonsComponent implements OnInit {
     </div>
   </div>
   `,
-  styleUrls: ['./widget-control-buttons.component.scss']
+    styleUrls: ['./widget-control-buttons.component.scss'],
+    standalone: false
 })
 export class WidgetControlButtonComponent implements OnInit {
 
